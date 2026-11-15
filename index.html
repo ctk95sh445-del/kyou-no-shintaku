@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="ja">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>今日の神託</title>
-
-  <style>
-
-    body {
-
-      background: #f5f0e5;
-
-      color: #333;
-
-      text-align: center;
-
-      font-family: sans-serif;
-
-      padding: 50px 15px;
-
-    }
-
-    h1 { color: #514a39; }
-
-    button {
-
-      background: #435c4d;
-
-      color: white;
-
-      border: none;
-
-      border-radius: 10p
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日の神託</title>
+<style>
+body {
+  background: #f5f0e5;
+  color: #333;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 50px 15px;
+}
+h1 { color: #514a39; }
+button {
+  background: #435c4d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 30px;
+  font-size: 18px;
+}
+#result { margin-top: 30px; }
+</style>
+</head>
+<body>
+<h1>今日の神託</h1>
+<p>やおよろずの小さな神さまたち</p>
+<p>今日もちょっと、いいことあるかも。</p>
+<button onclick="draw()">今日の神託を引く</button>
+<div id="result"></div>
+<script>
+function draw() {
+  document.getElementById("result").innerHTML =
+    "<h2>中吉</h2>" +
+    "<h3>アマテラリン</h3>" +
+    "<p>朝が苦手でも、昼から輝けばよいのじゃ。</p>" +
+    "<p>🍱 今日の昼餉：卵料理の定食</p>" +
+    "<p>🌱 小さなお告げ：空にも贈り物があるぞ。</p>";
+}
+</script>
+</body>
+</html>
